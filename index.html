@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>    The Super Rad Cool Amazing Quality Good Potassium Efficient Brilliant Site™</title>
+<style>
+  body {
+    background: #000033;
+    color: yellow;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  h1 {
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px #000;
+  }
+  .progress {
+    width: 80%;
+    height: 30px;
+    background: #333;
+    margin: 20px auto;
+    border: 2px solid #666;
+    position: relative;
+  }
+  .bar {
+    height: 100%;
+    background: repeating-linear-gradient(
+      45deg,
+      yellow,
+      yellow 10px,
+      orange 10px,
+      orange 20px
+    );
+    width: 0%;
+    transition: width 2s;
+  }
+  .gif {
+    margin-top: 20px;
+  }
+  marquee {
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #888;
+  }
+</style>
+</head>
+<body>
+<h1>🚧 UNDER CONSTRUCTION 🚧</h1>
+<p><i>We're almost done. Check back soon... (since 1998)</i></p>
+
+<div class="progress">
+  <div class="bar" id="bar"></div>
+</div>
+
+<p id="status"></p>
+
+<div class="gif">
+  <img src="https://i.imgur.com/bW6iO.gif" alt="Under Construction" width="100">
+  <img src="https://i.imgur.com/bW6iO.gif" alt="Under Construction" width="100">
+</div>
+
+<marquee scrollamount="10" behavior="alternate">
+  ⚠️ SITE UNDER CONSTRUCTION ⚠️ SITE UNDER CONSTRUCTION ⚠️
+</marquee>
+
+<footer>
+  <p>&copy; 1998-2025 UnderConstructionForever.net</p>
+  <p>Hosted proudly on a 56k modem.</p>
+</footer>
+
+<script>
+const bar = document.getElementById("bar");
+const status = document.getElementById("status");
+const excuses = [
+  "Compiling HTML...",
+  "Waiting for assets from design team...",
+  "Intern spilled coffee on the CSS...",
+  "Rewriting everything in Flash...",
+  "Optimizing for Netscape Navigator...",
+  "CEO still deciding background color...",
+  "404 motivation not found..."
+];
+
+function randomProgress() {
+  const width = Math.floor(Math.random() * 28) + 70; // 70-98%
+  bar.style.width = width + "%";
+  status.textContent = excuses[Math.floor(Math.random() * excuses.length)] + 
+    " (" + width + "%)";
+}
+
+randomProgress();
+setInterval(randomProgress, 5000);
+</script>
+</body>
+</html>
